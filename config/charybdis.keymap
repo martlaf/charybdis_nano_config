@@ -124,9 +124,9 @@
 
         Symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp TILDE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans  &trans  &trans  &kp PIPE   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE
-&trans  &trans  &trans  &trans  &trans  &kp SLASH  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &none      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans  &trans  &trans  &trans  &none      &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE
+&trans  &trans  &trans  &trans  &trans  &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &none
                 &trans  &trans  &trans                                            &trans                &trans
             >;
         };
