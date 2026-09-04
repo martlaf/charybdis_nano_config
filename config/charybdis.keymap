@@ -10,8 +10,12 @@
         device = <&trackball>;
 
         scroller {
-            layers = <4>;
+            layers = <6>;
             input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+        precision {
+            layers = <7>;
+            input-processors = <&zip_xy_scaler 1 2>;   // half speed of trackball movement
         };
     };
 
