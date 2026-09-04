@@ -7,6 +7,11 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        scroller {
+            layers = <4>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 
     behaviors {
