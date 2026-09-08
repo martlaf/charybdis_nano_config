@@ -54,9 +54,9 @@
             require-prior-idle-ms = <150>;
         };
 
-        HRMGuiR: HRMGuiR {
+        HRMRWait: HRMRWait {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRMGUIR";
+            label = "HRMRWAIT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -67,9 +67,9 @@
             hold-trigger-on-release;
         };
 
-        HRMGuiL: HRMGuiL {
+        HRMLWait: HRMLWait {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRMGUIL";
+            label = "HRMLWAIT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -97,10 +97,10 @@
 
         Base {
             bindings = <
-&Bootloader 0 Q      &kp W             &kp F          &kp P               &kp B      &kp J  &kp L                &kp U          &kp Y             &Bootloader 0 SEMICOLON
-&HRMGuiL LEFT_GUI A  &HRML LEFT_ALT R  &HRML LCTRL S  &HRML LEFT_SHIFT T  &kp G      &kp M  &HRMR RIGHT_SHIFT N  &HRMR LCTRL E  &HRMR LEFT_ALT I  &HRMGuiR RIGHT_GUI O
-&kp Z                &kp X             &kp C          &kp D               &kp V      &kp K  &kp H                &kp COMMA      &kp DOT           &lt 0 SLASH
-                                       &lt 1 ESCAPE   &lt 2 SPACE         &lt 5 TAB                                             &lt 3 ENTER       &lt 4 BACKSPACE
+&Bootloader 0 Q       &kp W                 &kp F          &kp P               &kp B      &kp J  &kp L                &kp U          &kp Y                 &Bootloader 0 SEMICOLON
+&HRMLWait LEFT_GUI A  &HRMLWait LEFT_ALT R  &HRML LCTRL S  &HRML LEFT_SHIFT T  &kp G      &kp M  &HRMR RIGHT_SHIFT N  &HRMR LCTRL E  &HRMRWait LEFT_ALT I  &HRMRWait RIGHT_GUI O
+&kp Z                 &kp X                 &kp C          &kp D               &kp V      &kp K  &kp H                &kp COMMA      &kp DOT               &lt 0 SLASH
+                                            &lt 1 ESCAPE   &lt 2 SPACE         &lt 5 TAB                                             &lt 3 ENTER           &lt 4 BACKSPACE
             >;
         };
 
@@ -133,10 +133,10 @@
 
         Functions {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
-                &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans           &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans           &kp F1  &kp F2  &kp F3  &kp F12
+                &trans  &trans  &trans                                   &trans  &trans
             >;
         };
 
