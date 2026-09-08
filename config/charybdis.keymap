@@ -20,7 +20,7 @@
         };
 
         precision {
-            layers = <7>;
+            layers = <5>;
             input-processors = <&zip_xy_scaler 1 2>;   // half speed of trackball movement
         };
     };
@@ -150,15 +150,6 @@
         };
 
         MouseScroll {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans                          &trans  &trans
-            >;
-        };
-
-        MousePrecision {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
