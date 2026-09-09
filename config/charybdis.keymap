@@ -117,7 +117,7 @@
             bindings = <
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))  &kp LS(LC(Z))  &kp LC(V)  &kp LC(C)      &kp LC(X)    &kp LC(Z)
 &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &kp CAPSLOCK   &kp CAPSLOCK   &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT
-&kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &none          &none          &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END
+&kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &caps_word     &caps_word     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END
                       &trans     &trans     &none                                                   &kp ENTER    &kp DEL
             >;
         };
