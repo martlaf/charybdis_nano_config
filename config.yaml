@@ -3,7 +3,7 @@ parse_config:
 
   # Canadian Multilingual Standard mappings
   zmk_keycode_map:
-    # --- SYM accents ---
+    # CMS Symbols
     RA(SLASH): "´"
     LEFT_BRACKET: "^"
     RA(LEFT_BRACKET): "`"
@@ -15,6 +15,10 @@ parse_config:
     RA(NUMBER_8): "}"
     RA(NUMBER_9): "["
     RA(NUMBER_0): "]"
+    CARET: "?"
+    GRAVE: "/"
+    RA(GRAVE): "|"
+    TILDE: '\'
 
 
     # Arrows
@@ -64,11 +68,6 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
-
-
-    # CMS Symbols
-    CARET: "?"
-    GRAVE: "/"
 
     # Symbols
     EXCLAMATION: "!"
@@ -135,7 +134,6 @@ parse_config:
       shifted: "}"
     RIGHT_BRACE: "}"
     RBRC: "}"
-    TILDE: "~"
     NON_US_HASH: "#"
     NUHS: "#"
     TILDE2: "~"
