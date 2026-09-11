@@ -106,10 +106,10 @@
 
         Num {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp RA(NUMBER_7)      &kp RA(NUMBER_8)       &none      &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp GRAVE
-&none             &none              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp RA(COMMA)     &kp RA(PERIOD)     &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &none      &kp NUMBER_0  &kp N1  &kp N2  &kp N3  &kp EQUAL
-                                     &kp PERIOD            &kp COMMA              &kp EQUAL                                &none   &none
+&none          &none           &none                 &none                  &none      &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp GRAVE
+&kp RA(N9)     &kp RA(N0)      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(N7)            &kp RA(N8)             &none      &kp NUMBER_0  &kp N1  &kp N2  &kp N3  &kp EQUAL
+                               &kp PERIOD            &kp COMMA              &kp EQUAL                                &none   &none
             >;
         };
 
