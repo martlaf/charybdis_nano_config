@@ -21,8 +21,7 @@ jobs:
 
       - name: Install keymap-drawer
         run: |
-          pip install keymap-drawer
-          pip install "tree-sitter<0.22" 
+          pipx install keymap-drawer
 
       - name: Parse and Draw Keymap
         run: |
