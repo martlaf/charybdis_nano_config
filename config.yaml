@@ -121,6 +121,7 @@ parse_config:
 
     LESS_THAN: <
     LT: <
+    PERIOD: "."
     DOT:
       tap: "."
       shifted: '"'
