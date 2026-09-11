@@ -5,6 +5,7 @@ on:
     paths:
       - 'config/charybdis.keymap'
       - 'config.yaml'
+      - '.github/workflows/draw-keymap.yml'
   workflow_dispatch:
 
 jobs:
