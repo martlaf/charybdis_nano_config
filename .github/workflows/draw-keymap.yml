@@ -25,8 +25,8 @@ jobs:
 
       - name: Parse and Draw Keymap
         run: |
-          keymap --config config.yaml parse -j config/charybdis.json -z config/charybdis.keymap > my_layout.yaml
-          keymap --config config.yaml draw my_layout.yaml > documentation/keymap_visual.svg
+          keymap --config config.yaml parse -z config/charybdis.keymap > my_layout.yaml
+          keymap --config config.yaml draw -j config/charybdis.json my_layout.yaml > documentation/keymap_visual.svg
 
       - name: Commit and Push SVG
         run: |
