@@ -29,13 +29,13 @@ jobs:
 
       - name: Parse and Draw Keymap
         run: |
-          keymap --config config.yaml parse -z config/charybdis.keymap > my_layout.yaml
-          keymap --config config.yaml draw -j config/charybdis.json my_layout.yaml > documentation/keymap_visual.svg
+          keymap --config config.yaml parse -z config/charybdis.keymap > documentation/kb_layout.yaml
+          keymap --config config.yaml draw -j config/charybdis.json documentation/kb_layout.yaml > documentation/keymap_visual.svg
 
       - name: Commit and Push SVG
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add documentation/keymap_visual.svg
+          git add documentation/keymap_visual.svg documentation db_layout.yaml
           git commit -m "chore: update keymap visual layout" || exit 0
           git push
