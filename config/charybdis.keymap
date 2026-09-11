@@ -124,10 +124,10 @@
 
         Symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &none      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans  &trans  &trans  &none      &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE
-&trans  &trans  &trans  &trans  &trans  &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &none
-                &trans  &trans  &trans                                            &trans                &trans
+&trans                &trans                &trans             &trans         &trans  &none      &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp RS(LEFT_BRACKET)  &kp RA(LEFT_BRACKET)  &kp LEFT_BRACKET   &kp RA(SLASH)  &trans  &none      &kp DOLLAR       &kp PERCENT   &kp CARET             &kp UNDERSCORE
+&trans                &trans                &kp RIGHT_BRACKET  &trans         &trans  &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &none
+                                            &trans             &trans         &trans                                            &trans                &trans
             >;
         };
 
