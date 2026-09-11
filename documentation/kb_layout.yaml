@@ -10,7 +10,7 @@ layers:
   - L
   - U
   - Y
-  - {t: SEMICOLON, h: '&bootloader'}
+  - {t: ;, h: '&bootloader', s: ':'}
   - {t: A, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LCTRL}
@@ -28,36 +28,36 @@ layers:
   - V
   - K
   - H
-  - COMMA
-  - DOT
-  - SLASH
+  - {t: ',', s: ''''}
+  - {t: ., s: '"'}
+  - {t: é, s: É}
   - {t: ESCAPE, h: Functions}
-  - {t: SPACE, h: Nav}
-  - {t: TAB, h: Mouse}
-  - {t: ENTER, h: Symbols}
-  - {t: BACKSPACE, h: Num}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse}
+  - {t: '$$mdi:keyboard-return$$', h: Symbols}
+  - {t: '$$mdi:backspace$$', h: Num}
   Num:
-  - SINGLE QUOTE
-  - DOUBLE QUOTES
+  - {t: '''', s: '"'}
+  - '"'
   - AltGr+7
   - AltGr+8
   - ''
-  - ASTERISK
+  - '*'
   - '7'
   - '8'
   - '9'
-  - GRAVE
+  - /
   - ''
   - ''
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
+  - (
+  - )
   - ''
-  - PLUS
+  - +
   - '4'
   - '5'
   - '6'
-  - MINUS
-  - AltGr+COMMA
+  - {t: '-', s: _}
+  - {t: 'AltGr+,', s: AltGr+'}
   - AltGr+PERIOD
   - AltGr+9
   - AltGr+0
@@ -66,10 +66,10 @@ layers:
   - '1'
   - '2'
   - '3'
-  - EQUAL
+  - {t: '=', s: +}
   - PERIOD
-  - COMMA
-  - EQUAL
+  - {t: ',', s: ''''}
+  - {t: '=', s: +}
   - ''
   - {type: held}
   Nav:
@@ -83,19 +83,19 @@ layers:
   - Ctl+C
   - Ctl+X
   - Ctl+Z
-  - LEFT
-  - UP
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - CAPSLOCK
   - CAPSLOCK
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - HOME
-  - PG UP
-  - PG DN
+  - $$mdi:transfer-up$$
+  - $$mdi:transfer-down$$
   - END
   - '&caps_word'
   - '&caps_word'
@@ -106,8 +106,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - ''
-  - DELETE
-  - BACKSPACE
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   Symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,29 +115,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - AMPERSAND
-  - ASTERISK
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
-  - ¨
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: Sft+^, s: Sft+¨}
   - '`'
-  - ^
+  - {t: ^, s: ¨}
   - ´
   - {t: ▽, type: trans}
   - ''
-  - DOLLAR
-  - PERCENT
-  - CARET
-  - UNDERSCORE
+  - $
+  - '%'
+  - '?'
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ç
+  - {t: ç, s: Ç}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - GRAVE
-  - EXCLAMATION
-  - AT SIGN
-  - POUND
+  - /
+  - '!'
+  - '@'
+  - '#'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -156,9 +156,9 @@ layers:
   - F9
   - F10
   - {t: ▽, type: trans}
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
@@ -166,8 +166,8 @@ layers:
   - F6
   - F11
   - {t: ▽, type: trans}
-  - VOL DN
-  - MUTE
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
