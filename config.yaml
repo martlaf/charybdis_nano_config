@@ -4,11 +4,11 @@ parse_config:
   # Canadian Multilingual Standard mappings
   token_aliases:
     # --- SYM accents ---
-    RA(SLSH): "´"
-    LBKT: "^"
-    RA(LBKT): "`"
-    RS(LBKT): "¨"
-    RBKT: "ç"
+    "AltGr+/": "´"
+    "[": "^"
+    "AltGr+[": "`"
+    "Sft+[": "¨"
+    "]": "ç"
 
 
 draw_config:
