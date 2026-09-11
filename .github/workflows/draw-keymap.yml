@@ -1,0 +1,35 @@
+name: Draw Keymap
+
+on:
+  push:
+    paths:
+      - 'config/charybdis.keymap'
+  workflow_dispatch:
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse and Draw Keymap
+        run: |
+          keymap --config config.yaml parse -z config/charybdis.keymap > my_layout.yaml
+          keymap --config config.yaml draw my_layout.yaml > documentation/keymap_visual.svg
+
+      - name: Commit and Push SVG
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add documentation/keymap_visual.svg
+          git commit -m "chore: update keymap visual layout" || exit 0
+          git push

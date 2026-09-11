@@ -1,0 +1,20 @@
+parse_config:
+  preprocess: true
+
+  # Canadian Multilingual Standard mappings
+  token_aliases:
+    # --- SYM accents ---
+    RA(SLASH): "´"
+    LEFT_BRACKET: "^"
+    RA(LEFT_BRACKET): "`"
+    RS(LEFT_BRACKET): "¨"
+    RIGHT_BRACKET: "ç"
+
+
+draw_config:
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+
+  combo_side_offset: 4
+  draw_combos: true
