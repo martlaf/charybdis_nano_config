@@ -2,13 +2,13 @@ parse_config:
   preprocess: true
 
   # Canadian Multilingual Standard mappings
-  token_aliases:
+  zmk_keycode_map:
     # --- SYM accents ---
-    "AltGr+/": "´"
-    "[": "^"
-    "AltGr+[": "`"
-    "Sft+[": "¨"
-    "]": "ç"
+    RA(SLASH): "´"
+    LEFT_BRACKET: "^"
+    RA(LEFT_BRACKET): "`"
+    RS(LEFT_BRACKET): "¨"
+    RIGHT_BRACKET: "ç"
 
 
 draw_config:
