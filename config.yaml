@@ -9,6 +9,7 @@ parse_config:
     RA(LEFT_BRACKET): "`"
     RS(LEFT_BRACKET): "¨"
     RIGHT_BRACKET: "ç"
+    RA(RIGHT_BRACKET): "~"
     RA(COMMA): "<"
     RA(PERIOD): ">"
     RA(N7): "{"
