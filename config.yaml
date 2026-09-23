@@ -1,9 +1,9 @@
 parse_config:
   preprocess: true
   layer_legend_map:
-    MouseScroll: Scroll
-    MouseScrollHorizontal: HScroll
-    MouseScrollVertical: VScroll
+    MouseScroll: Scrll
+    MouseScrollHorizontal: HScrll
+    MouseScrollVertical: VScrll
 
   # Canadian Multilingual Standard mappings
   zmk_keycode_map:
