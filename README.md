@@ -17,4 +17,6 @@ $ ls /dev/ttyACM*
 $ sudo screen /dev/ttyACM0 115200
 ```
 
+To capture logs to file, press `Ctrl+A` and then `H`, and then `Ctrl+A` and then `H` again to stop capturing logs. It makes it easier to isolate your logs if you use other hardware to do unrelated tasks while capturing logs (e.g., laptop keyboard/trackpad to select windows).
+
 When done, kill with `Ctrl+A` and then `K`
