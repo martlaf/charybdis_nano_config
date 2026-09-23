@@ -13,19 +13,34 @@
     tapping-term-ms = <200>;
 };
 
-&zip_scroll_snap_h {
-    compatible = "zmk,input-processor-scroll-snap";
-    x-threshold = <1000 1>;   // always x snap
-    y-threshold = <1 1000>;   // never y snap
-};
-
-&zip_scroll_snap_v {
-    compatible = "zmk,input-processor-scroll-snap";
-    x-threshold = <1 1000>;   // never x snap
-    y-threshold = <1000 1>;   // always y snap
-};
-
 / {
+    zip_scroll_snap_h: zip_scroll_snap_h {
+        compatible = "zmk,input-processor-scroll-snap";
+        x-threshold = <1000 1>;   // always x snap
+        y-threshold = <1 1000>;   // never y snap
+
+        require-n-samples = <1>;
+        immediate-snap-threshold = <1500>;
+        lock-duration-ms = <200>;
+        lock-for-next-n-events = <10>;
+        idle-reset-timeout-ms = <200>;
+
+        track-remainders;
+    };
+    zip_scroll_snap_v: zip_scroll_snap_v {
+        compatible = "zmk,input-processor-scroll-snap";
+        x-threshold = <1 1000>;   // never x snap
+        y-threshold = <1000 1>;   // always y snap
+
+        require-n-samples = <1>;
+        immediate-snap-threshold = <1500>;
+        lock-duration-ms = <200>;
+        lock-for-next-n-events = <10>;
+        idle-reset-timeout-ms = <200>;
+
+        track-remainders;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
