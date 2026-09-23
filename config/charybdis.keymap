@@ -19,30 +19,26 @@
         #input-processor-cells = <0>;
         x-threshold = <1000 1>;   // always x snap
         y-threshold = <1 1000>;   // never y snap
-        xy-threshold = <1000 1>;
+        xy-threshold = <0 0>;
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1>;
         lock-duration-ms = <10>;
         lock-for-next-n-events = <1000>;
         idle-reset-timeout-ms = <200>;
-
-        track-remainders;
     };
     zip_scroll_snap_v: zip_scroll_snap_v {
         compatible = "zmk,input-processor-scroll-snap";
         #input-processor-cells = <0>;
         x-threshold = <1 1000>;   // never x snap
         y-threshold = <1000 1>;   // always y snap
-        xy-threshold = <1 1000>;
+        xy-threshold = <0 0>;
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1>;
         lock-duration-ms = <10>;
         lock-for-next-n-events = <1000>;
         idle-reset-timeout-ms = <200>;
-
-        track-remainders;
     };
 
     trackball_listener {
