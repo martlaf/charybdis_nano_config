@@ -14,12 +14,13 @@
 };
 
 &zip_scroll_snap_h {
-    compatible = "cardinal-sys,zmk-scroll-snap";
+    compatible = "zmk,input-processor-scroll-snap";
     x-threshold = <1000 1>;   // always x snap
     y-threshold = <1 1000>;   // never y snap
 };
 
 &zip_scroll_snap_v {
+    compatible = "zmk,input-processor-scroll-snap";
     x-threshold = <1 1000>;   // never x snap
     y-threshold = <1000 1>;   // always y snap
 };

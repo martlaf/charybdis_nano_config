@@ -4,6 +4,8 @@ manifest:
     url-base: https://github.com/zmkfirmware
   - name: badjeff
     url-base: https://github.com/badjeff
+  - name: kot149
+    url-base: https://github.com/kot149
   projects:
   - name: zmk
     remote: zmkfirmware
@@ -13,7 +15,7 @@ manifest:
     remote: badjeff
     revision: zmk-0.3
   - name: zmk-scroll-snap
-    url: https://github.com/cardinal-sys/zmk-scroll-snap
-    revision: main
+    remote: kot149
+    revision: v1
   self:
     path: config
