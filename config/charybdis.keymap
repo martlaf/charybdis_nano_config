@@ -22,9 +22,9 @@
         xy-threshold = <1000 1>;
 
         require-n-samples = <1>;
-        immediate-snap-threshold = <1500>;
+        immediate-snap-threshold = <1>;
         lock-duration-ms = <10>;
-        lock-for-next-n-events = <1>;
+        lock-for-next-n-events = <1000>;
         idle-reset-timeout-ms = <200>;
 
         track-remainders;
@@ -37,9 +37,9 @@
         xy-threshold = <1 1000>;
 
         require-n-samples = <1>;
-        immediate-snap-threshold = <1500>;
+        immediate-snap-threshold = <1>;
         lock-duration-ms = <10>;
-        lock-for-next-n-events = <1>;
+        lock-for-next-n-events = <1000>;
         idle-reset-timeout-ms = <200>;
 
         track-remainders;
