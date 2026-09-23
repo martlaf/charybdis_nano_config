@@ -23,8 +23,8 @@
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1500>;
-        lock-duration-ms = <200>;
-        lock-for-next-n-events = <10>;
+        lock-duration-ms = <0>;
+        lock-for-next-n-events = <0>;
         idle-reset-timeout-ms = <200>;
 
         track-remainders;
@@ -38,8 +38,8 @@
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1500>;
-        lock-duration-ms = <200>;
-        lock-for-next-n-events = <10>;
+        lock-duration-ms = <0>;
+        lock-for-next-n-events = <0>;
         idle-reset-timeout-ms = <200>;
 
         track-remainders;
