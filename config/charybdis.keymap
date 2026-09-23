@@ -19,6 +19,7 @@
         #input-processor-cells = <0>;
         x-threshold = <1000 1>;   // always x snap
         y-threshold = <1 1000>;   // never y snap
+        xy-threshold = <1000 1>;
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1500>;
@@ -33,6 +34,7 @@
         #input-processor-cells = <0>;
         x-threshold = <1 1000>;   // never x snap
         y-threshold = <1000 1>;   // always y snap
+        xy-threshold = <1 1000>;
 
         require-n-samples = <1>;
         immediate-snap-threshold = <1500>;
