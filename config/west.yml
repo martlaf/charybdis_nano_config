@@ -12,5 +12,8 @@ manifest:
   - name: zmk-pmw3610-driver
     remote: badjeff
     revision: zmk-0.3
+  - name: zmk-scroll-snap
+    url: https://github.com/cardinal-sys/zmk-scroll-snap
+    revision: main
   self:
     path: config

@@ -31,6 +31,9 @@ jobs:
       - name: Parse and Draw Keymap
         run: |
           keymap --config config.yaml parse -z config/charybdis.keymap > kb_layout.yaml
+          yq -i 'del(.layers.MouseScroll)' kb_layout.yaml
+          yq -i 'del(.layers.MouseScrollVertical)' kb_layout.yaml
+          yq -i 'del(.layers.MouseScrollHorizontal)' kb_layout.yaml
           keymap --config config.yaml draw -j config/charybdis.json kb_layout.yaml > documentation/keymap_visual.svg
 
       - name: Commit and Push SVG
