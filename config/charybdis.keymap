@@ -169,7 +169,7 @@
 
         Nav {
             bindings = <
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(V)  &kp LC(C)  &kp LC(X)   &kp LC(LS(Z))
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(V)  &kp LC(C)  &kp LC(X)   &kp LS(LC(Z))
 &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &kp CAPSLOCK   &kp CAPSLOCK  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
 &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &caps_word     &caps_word    &kp HOME   &kp PG_DN  &kp PG_UP   &kp END
                       &none      &none      &none                                              &kp DELETE  &kp BACKSPACE
