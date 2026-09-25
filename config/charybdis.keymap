@@ -44,24 +44,24 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        scroller {
-            layers = <6>;
-            input-processors =
-                <&zip_xy_to_scroll_mapper>,
-                <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
-        };
-
         v_scroller {
-            layers = <7>;
+            layers = <6>;
             input-processors =
                 <&zip_xy_to_scroll_mapper &zip_scroll_snap_v>,
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
         };
 
         h_scroller {
-            layers = <8>;
+            layers = <7>;
             input-processors =
                 <&zip_xy_to_scroll_mapper &zip_scroll_snap_h>,
+                <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        };
+
+        scroller {
+            layers = <8>;
+            input-processors =
+                <&zip_xy_to_scroll_mapper>,
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
         };
 
