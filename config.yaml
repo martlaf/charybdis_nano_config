@@ -1,9 +1,9 @@
 parse_config:
   preprocess: true
   layer_legend_map:
-    MouseScroll: Scrll
-    MouseScrollHorizontal: HScrll
-    MouseScrollVertical: VScrll
+    MouseScroll: $$mdi:pan$$
+    MouseScrollHorizontal: $$mdi:pan-horizontal$$
+    MouseScrollVertical: $$mdi:pan-vertical$$
 
   # Canadian Multilingual Standard mappings
   zmk_keycode_map:
