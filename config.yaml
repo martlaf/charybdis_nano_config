@@ -9,12 +9,12 @@ parse_config:
   raw_binding_map:
     "&mkp LCLK": $$mdi:mouse-left-click$$
     "&mkp RCLK": $$mdi:mouse-right-click$$
-    "&mkp MCLK": $$mdi:mouse-right-click$$
+    "&mkp MCLK": $$mdi:mouse-scroll-wheel$$
     "&msc SCRL_LEFT": $$mdi:pan-left$$
     "&msc SCRL_RIGHT": $$mdi:pan-right$$
     "&msc SCRL_UP": $$mdi:pan-up$$
     "&msc SCRL_DOWN": $$mdi:pan-down$$
-    "&capsword": $$mdi:apple-keyboard-caps$$$$mdi:alpha-w-box-outline$$
+    "&caps_word": $$mdi:apple-keyboard-caps$$$$mdi:alpha-w-box-outline$$
 
   # Canadian Multilingual Standard mappings
   zmk_keycode_map:
