@@ -17,7 +17,7 @@ parse_config:
 
     "&caps_word":
       tap: $$mdi:apple-keyboard-caps$$
-      shifted: $$mdi:alpha-w$$
+      shifted: W
       type: text_with_symbol
 
     '&mmv MOVE_UP':
