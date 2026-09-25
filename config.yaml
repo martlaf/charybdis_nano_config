@@ -117,9 +117,11 @@ parse_config:
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
     LEFT_GUI: $$mdi:view-grid-outline$$
+    RIGHT_GUI: $$mdi:view-grid-outline$$
     LEFT_ALT: ALT
     LCTRL: CTRL
     LEFT_SHIFT: SHIFT
+    RIGHT_SHIFT: SHIFT
 
     # Symbols
     EXCLAMATION: "!"
