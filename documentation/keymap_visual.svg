@@ -310,7 +310,7 @@ rect.held, rect.combo.held {
 }
 .text_with_symbol.shifted {
   translate: 8px 13px;
-  font-size: 10px;
+  font-size: 12px;
   opacity: 1.0;
 } 
 
@@ -319,7 +319,7 @@ rect.held, rect.combo.held {
 }
 .combo.text_with_symbol.shifted {
   translate: 7px 5px;
-  font-size: 10px;
+  font-size: 12px;
   opacity: 1.0;
 } 
 </style>
