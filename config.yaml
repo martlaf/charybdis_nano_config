@@ -1,69 +1,5 @@
 parse_config:
   preprocess: true
-  draw_key_sides: true
-
-  svg_extra_style: |
-    svg.keymap {
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 10px;
-      font-weight: bold;
-    }
-    
-    text.label {
-      stroke: #dfdfde;
-      stroke-width: 12;
-      stroke-linejoin: round;
-    }
-    
-    rect.combo, rect.combo-separate {
-      opacity: 0.95;
-      stroke: #c9cccf;
-      stroke-width: 0.5;
-      fill: #d7eaed;
-    }
-    path.combo {
-      stroke-dasharray: 4, 4;
-      stroke-opacity: 0.3;
-    }
-    
-    rect.held, rect.combo.held {
-      fill: #ebdada;
-    }
-    
-    .trans.tap, .ghost.tap {
-      opacity: 0.5;
-    }
-    
-    .shifted {
-      translate: -9px 3px;
-      opacity: 0.3;
-    }
-    
-    .toggle.shifted {
-      translate: -12px 17px;
-      opacity: 1.0;
-    }
-    .toggle.hold {
-      translate: 12px -25px;
-    }
-    
-    .text_with_symbol.tap {
-      translate: -1px 1px;
-    }
-    .text_with_symbol.shifted {
-      translate: 8px 13px;
-      font-size: 8px;
-      opacity: 1.0;
-    } 
-    
-    .combo.text_with_symbol.tap {
-      translate: -1px 1px;
-    }
-    .combo.text_with_symbol.shifted {
-      translate: 7px 5px;
-      font-size: 8px;
-      opacity: 1.0;
-    } 
 
   layer_legend_map:
     MouseScroll: $$mdi:pan$$
@@ -81,7 +17,7 @@ parse_config:
 
     "&caps_word":
       tap: $$mdi:apple-keyboard-caps$$
-      shifted: $$mdi:alpha-w-box-outline$$
+      shifted: WORD
       type: text_with_symbol
 
     '&mmv MOVE_UP':
@@ -180,6 +116,10 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
+    LEFT_GUI: $$mdi:view-grid-outline$$
+    LEFT_ALT: ALT
+    LCTRL: CTRL
+    LEFT_SHIFT: SHIFT
 
     # Symbols
     EXCLAMATION: "!"
@@ -257,3 +197,72 @@ draw_config:
 
   combo_side_offset: 4
   draw_combos: true
+  draw_key_sides: true
+
+  glyph_tap_size: 14
+  glyph_hold_size: 8
+  glyph_shifted_size: 8
+
+  svg_extra_style: |
+    svg.keymap {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    
+    text.label {
+      stroke: #dfdfde;
+      stroke-width: 12;
+      stroke-linejoin: round;
+    }
+    
+    rect.combo, rect.combo-separate {
+      opacity: 0.95;
+      stroke: #c9cccf;
+      stroke-width: 0.5;
+      fill: #d7eaed;
+    }
+    path.combo {
+      stroke-dasharray: 4, 4;
+      stroke-opacity: 0.3;
+    }
+    
+    rect.held, rect.combo.held {
+      fill: #ebdada;
+    }
+    
+    .trans.tap, .ghost.tap {
+      opacity: 0.5;
+    }
+    
+    .shifted {
+      translate: -9px 3px;
+      opacity: 0.3;
+    }
+    
+    .toggle.shifted {
+      translate: -12px 17px;
+      opacity: 1.0;
+    }
+    .toggle.hold {
+      translate: 12px -25px;
+    }
+    
+    .text_with_symbol.tap {
+      translate: -1px 1px;
+    }
+    .text_with_symbol.shifted {
+      translate: 8px 13px;
+      font-size: 9px;
+      opacity: 1.0;
+    } 
+    
+    .combo.text_with_symbol.tap {
+      translate: -1px 1px;
+    }
+    .combo.text_with_symbol.shifted {
+      translate: 7px 5px;
+      font-size: 9px;
+      opacity: 1.0;
+    } 
+
