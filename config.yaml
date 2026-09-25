@@ -202,8 +202,8 @@ draw_config:
   draw_key_sides: true
 
   glyph_tap_size: 14
-  glyph_hold_size: 8
-  glyph_shifted_size: 8
+  glyph_hold_size: 10
+  glyph_shifted_size: 10
 
   svg_extra_style: |
     svg.keymap {
@@ -255,7 +255,7 @@ draw_config:
     }
     .text_with_symbol.shifted {
       translate: 8px 13px;
-      font-size: 18px;
+      font-size: 8px;
       opacity: 1.0;
     } 
     
@@ -264,7 +264,7 @@ draw_config:
     }
     .combo.text_with_symbol.shifted {
       translate: 7px 5px;
-      font-size: 18px;
+      font-size: 8px;
       opacity: 1.0;
     } 
 
