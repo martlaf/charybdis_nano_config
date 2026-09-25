@@ -202,8 +202,8 @@ draw_config:
   draw_key_sides: true
 
   glyph_tap_size: 14
-  glyph_hold_size: 10
-  glyph_shifted_size: 10
+  glyph_hold_size: 11
+  glyph_shifted_size: 12
 
   svg_extra_style: |
     svg.keymap {
@@ -240,6 +240,9 @@ draw_config:
     .shifted {
       translate: -9px 3px;
       opacity: 0.5;
+    }
+    .hold {
+      translate: 0px 3px;
     }
     
     .toggle.shifted {
