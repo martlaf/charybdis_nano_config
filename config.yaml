@@ -17,7 +17,7 @@ parse_config:
 
     "&caps_word":
       tap: $$mdi:apple-keyboard-caps$$
-      shifted: WORD
+      shifted: $$mdi:alpha-w$$
       type: text_with_symbol
 
     '&mmv MOVE_UP':
@@ -253,7 +253,7 @@ draw_config:
     }
     .text_with_symbol.shifted {
       translate: 8px 13px;
-      font-size: 9px;
+      font-size: 10px;
       opacity: 1.0;
     } 
     
@@ -262,7 +262,7 @@ draw_config:
     }
     .combo.text_with_symbol.shifted {
       translate: 7px 5px;
-      font-size: 9px;
+      font-size: 10px;
       opacity: 1.0;
     } 
 
