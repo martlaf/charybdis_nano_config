@@ -78,7 +78,11 @@ parse_config:
     "&msc SCRL_RIGHT": $$mdi:pan-right$$
     "&msc SCRL_UP": $$mdi:pan-up$$
     "&msc SCRL_DOWN": $$mdi:pan-down$$
-    "&caps_word": $$mdi:apple-keyboard-caps$$$$mdi:alpha-w-box-outline$$
+
+    "&caps_word":
+      tap: $$mdi:apple-keyboard-caps$$
+      shifted: $$mdi:alpha-w-box-outline$$
+      type: text_with_symbol
 
     '&mmv MOVE_UP':
       tap: $$mdi:mouse-outline$$
