@@ -242,7 +242,7 @@ draw_config:
       opacity: 0.5;
     }
     .hold {
-      translate: 0px 2px;
+      translate: 0px 1px;
     }
     
     .toggle.shifted {
