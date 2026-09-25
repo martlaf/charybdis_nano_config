@@ -39,10 +39,10 @@ parse_config:
 
 
     # Functions
-    C_BRI_UP: $$mdi:brightness-5$$
-    C_BRIGHTNESS_INC: $$mdi:brightness-5$$
-    C_BRI_DN: $$mdi:brightness-7$$
-    C_BRIGHTNESS_DEC: $$mdi:brightness-7$$
+    C_BRI_UP: $$mdi:brightness-7$$
+    C_BRIGHTNESS_INC: $$mdi:brightness-7$$
+    C_BRI_DN: $$mdi:brightness-5$$
+    C_BRIGHTNESS_DEC: $$mdi:brightness-5$$
 
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
@@ -54,7 +54,15 @@ parse_config:
     C_VOLUME_UP: $$mdi:volume-high$$
     C_VOL_DN: $$mdi:volume-low$$
     C_VOLUME_DOWN: $$mdi:volume-low$$
-    F20: $$mdi:microphone$$
+    F20: $$mdi:microphone-off$$
+
+    PRINTSCREEN: $$mdi:monitor-screenshot$$
+
+    LS(LC(Z)): $$mdi:redo-variant$$
+    LC(Z): $$mdi:undo-variant$$
+    LC(C): $$mdi:content-copy$$
+    LC(X): $$mdi:content-cut$$
+    LC(V): $$mdi:content-paste$$
 
 
     #
