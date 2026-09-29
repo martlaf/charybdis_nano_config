@@ -72,10 +72,22 @@
     };
 
     behaviors {
-        swapper: swapper {
-          compatible = "zmk,behavior-tri-state";
-          #binding-cells = <0>;
-          bindings = <&kp A>, <&kp B>, <&kt C>;
+        AltTab: AltTab {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+        };
+
+        CtrlTab: CtrlTab {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
+        };
+
+        AltSlash: AltSlash {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
         };
 
         HRMR: HRMR {
@@ -176,7 +188,7 @@
         Nav {
             bindings = <
 &kp LC(Z)     &kp LC(X)    &kp LC(C)    &kp LC(V)      &kp LS(LC(Z))  &kp LC(Z)     &kp LC(V)  &kp LC(C)  &kp LC(X)   &kp LS(LC(Z))
-&kp LEFT_GUI  &kp LA(TAB)  &kp LC(TAB)  &kp LA(GRAVE)  &kp CAPSLOCK   &kp CAPSLOCK  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
+&kp LEFT_GUI  &AltTab      &CtrlTab     &AltSlash      &kp CAPSLOCK   &kp CAPSLOCK  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
 &kp HOME      &kp PG_UP    &kp PG_DN    &kp END        &caps_word     &caps_word    &kp HOME   &kp PG_DN  &kp PG_UP   &kp END
                            &none        &none          &none                                              &kp DELETE  &kp BACKSPACE
             >;
