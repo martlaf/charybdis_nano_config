@@ -85,7 +85,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
 
-            ignored-key-positions = <1 2 11>;
+            ignored-key-positions = <1 2>;
         };
 
         CtrlTab: CtrlTab {
