@@ -72,6 +72,12 @@
     };
 
     behaviors {
+        swapper: swapper {
+          compatible = "zmk,behavior-tri-state";
+          #binding-cells = <0>;
+          bindings = <&kp A>, <&kp B>, <&kt C>;
+        };
+
         HRMR: HRMR {
             compatible = "zmk,behavior-hold-tap";
             label = "HRMR";
