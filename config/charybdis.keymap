@@ -169,6 +169,18 @@
             tapping-term-ms = <150>;
             hold-trigger-key-positions = <33 34 23 13 0 12 11 22 21 20 10 1 2 3 4 14 24 25 15 5 6 16 26 27 17 7 8 18 28 29 19 9 31 30>;
         };
+
+        ltbackspace: ltbackspace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTBACKSPACE";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <100>;
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -179,7 +191,7 @@
 &kp Q  &kp W                 &kp F          &kp P               &kp B           &kp J  &kp L                &kp U          &kp Y                 &kp SEMICOLON
 &kp A  &HRMLWait LEFT_ALT R  &HRML LCTRL S  &HRML LEFT_SHIFT T  &kp G           &kp M  &HRMR RIGHT_SHIFT N  &HRMR LCTRL E  &HRMRWait LEFT_ALT I  &kp O
 &kp Z  &kp X                 &kp C          &kp D               &kp V           &kp K  &kp H                &kp COMMA      &kp DOT               &kp SLASH
-                             &lt 4 ESCAPE   &lt 2 SPACE         &ltmouse 5 TAB                                             &lt 3 ENTER           &lt 1 BACKSPACE
+                             &lt 4 ESCAPE   &lt 2 SPACE         &ltmouse 5 TAB                                             &lt 3 ENTER           &ltbackspace 1 BACKSPACE
             >;
         };
 
