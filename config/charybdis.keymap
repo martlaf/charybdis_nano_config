@@ -93,33 +93,6 @@
             ignored-key-positions = <3>;
         };
 
-        AltShiftTab: AltShiftTab {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
-
-            label = "ALTSHIFTTAB";
-            ignored-key-positions = <1 2 12>;
-        };
-
-        AltShiftSlash: AltShiftSlash {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp LS(GRAVE)>, <&kt LALT>;
-
-            label = "ALTSHIFTSLASH";
-            ignored-key-positions = <1 2 11>;
-        };
-
-        CtrlShiftTab: CtrlShiftTab {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LCTRL>, <&kp LS(TAB)>, <&kt LCTRL>;
-
-            label = "CTRLSHIFTTAB";
-            ignored-key-positions = <13>;
-        };
-
         HRMR: HRMR {
             compatible = "zmk,behavior-hold-tap";
             label = "HRMR";
