@@ -76,14 +76,14 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <1, 2, 12>;
+            ignored-key-positions = <1 2 12>;
         };
 
         AltSlash: AltSlash {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
-            ignored-key-positions = <1, 2, 11>;
+            ignored-key-positions = <1 2 11>;
         };
 
         CtrlTab: CtrlTab {
@@ -99,7 +99,7 @@
             bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
 
             label = "ALTSHIFTTAB";
-            ignored-key-positions = <1, 2, 12>;
+            ignored-key-positions = <1 2 12>;
         };
 
         AltShiftSlash: AltShiftSlash {
@@ -108,7 +108,7 @@
             bindings = <&kt LALT>, <&kp LS(GRAVE)>, <&kt LALT>;
 
             label = "ALTSHIFTSLASH";
-            ignored-key-positions = <1, 2, 11>;
+            ignored-key-positions = <1 2 11>;
         };
 
         CtrlShiftTab: CtrlShiftTab {
