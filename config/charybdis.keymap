@@ -207,7 +207,7 @@
         Nav {
             bindings = <
 &none         &kp LS(TAB)  &kp LS(GRAVE)  &kp LS(TAB)  &none         &kp LC(Z)     &kp LC(V)  &kp LC(C)  &kp LC(X)   &kp LS(LC(Z))
-&kp LEFT_GUI  &AltTab      &AltSlash      &CtrlTab     &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
+&kp LEFT_GUI  &CtrlTab     &AltSlash      &AltTab      &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
 &kp HOME      &kp PG_UP    &kp PG_DN      &kp END      &caps_word    &caps_word    &kp HOME   &kp PG_DN  &kp PG_UP   &kp END
                            &kp ESC        &none        &none                                             &kp DELETE  &kp BACKSPACE
             >;
