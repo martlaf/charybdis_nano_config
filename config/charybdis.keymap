@@ -77,7 +77,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
 
-            ignored-key-positions = <1 2>;
+            ignored-key-positions = <1 2 30>;
         };
 
         AltSlash: AltSlash {
@@ -85,7 +85,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
 
-            ignored-key-positions = <1 2>;
+            ignored-key-positions = <1 2 30>;
         };
 
         CtrlTab: CtrlTab {
@@ -93,7 +93,7 @@
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
 
-            ignored-key-positions = <3>;
+            ignored-key-positions = <3 30>;
         };
 
         HRMR: HRMR {
