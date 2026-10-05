@@ -44,7 +44,7 @@ parse_config:
     LEFT_BRACKET: "^"
     RA(LEFT_BRACKET): "`"
     RS(LEFT_BRACKET): "¨"
-    RIGHT_BRACKET: "ç"
+    RIGHT_BRACKET: "Ç"
     RA(RIGHT_BRACKET): "~"
     RA(COMMA): "<"
     RA(PERIOD): ">"
