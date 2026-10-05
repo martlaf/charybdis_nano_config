@@ -57,6 +57,9 @@ parse_config:
     RA(GRAVE): "|"
     TILDE: '\'
     SLASH: "É"
+    BACKSLASH: 'À'
+    BSLH: 'À'
+    SQT: "È"
 
 
     # Arrows
@@ -150,8 +153,6 @@ parse_config:
     UNDER: _
     QUESTION: "?"
     QMARK: "?"
-    BACKSLASH: '\'
-    BSLH: '\'
     PIPE: "|"
     NON_US_BACKSLASH: \
     PIPE2: "|"
@@ -164,7 +165,6 @@ parse_config:
       shifted: ":"
     COLON: ":"
     SINGLE_QUOTE: "'"
-    SQT: "'"
     APOSTROPHE: <
     APOS: .
     DOUBLE_QUOTES: '"'
